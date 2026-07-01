@@ -21,8 +21,8 @@ This project was developed as part of the **freeCodeCamp - Relational Database C
 
 ### 🛠️ How to Use
 To restore this database locally, run the following commands in your PostgreSQL terminal:
-```sql
-CREATE DATABASE universe;
+
+`CREATE DATABASE universe;`
 
 Türkçe
 📝 Proje Özeti
@@ -31,26 +31,26 @@ Bu proje, freeCodeCamp - Relational Database Certification (İlişkisel Veritaba
 🚀 Özellikler ve Teknik Gereksinimler
 Veritabanı Yönetim Sistemi: PostgreSQL
 
-Toplam Tablo Sayısı: 5 adet (galaxy, star, planet, moon ve space_mission)
+Toplam Tablo Sayısı: 5 adet (`galaxy`, `star`, `planet`, `moon` ve `space_mission`)
 
 Kısıtlamalar & Kurallar:
 
-Her tablo, table_name_id kuralına uygun, otomatik artan (SERIAL) bir Birincil Anahtara (Primary Key) sahiptir.
+Her tablo, `table_name_id` kuralına uygun, otomatik artan (`SERIAL`) bir Birincil Anahtara (Primary Key) sahiptir.
 
-Hiyerarşik düzen Foreign Key'ler ile korunmuştur: galaxy ➔ star ➔ planet ➔ moon.
+Hiyerarşik düzen Foreign Key'ler ile korunmuştur: `galaxy` ➔ `star` ➔ `planet` ➔ `moon`.
 
-NOT NULL ve UNIQUE kısıtlamaları ile veri tutarlılığı sağlanmıştır.
+`NOT NULL` ve `UNIQUE` kısıtlamaları ile veri tutarlılığı sağlanmıştır.
 
-Kullanılan Veri Tipleri: VARCHAR, INT, NUMERIC, TEXT ve BOOLEAN.
+Kullanılan Veri Tipleri: `VARCHAR`, `INT`, `NUMERIC`, `TEXT` ve `BOOLEAN`.
 
 Veri Hacmi: 6 galaksi, 6 yıldız, 12 gezegen ve 20 ay olmak üzere toplamda 40'tan fazla satır veri işlenmiştir.
 
 🛠️ Nasıl Çalıştırılır?
 Bu veritabanını kendi yerel ortamınızda ayağa kaldırmak için PostgreSQL terminalinde şu komutu çalıştırın:
 
-CREATE DATABASE universe;
+` CREATE DATABASE universe;`
 
 Ardından yedek dosyasını içeri aktarın:
 
-psql -U postgres -d universe < universe.sql
+` psql -U postgres -d universe < universe.sql `
 
