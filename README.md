@@ -24,28 +24,28 @@ To restore this database locally, run the following commands in your PostgreSQL 
 
 `CREATE DATABASE universe;`
 
-Türkçe
-📝 Proje Özeti
+## Türkçe
+### 📝 Proje Özeti
 Bu proje, freeCodeCamp - Relational Database Certification (İlişkisel Veritabanı Sertifikası) kapsamında geliştirilmiştir. Amaç, PostgreSQL kullanarak universe adında ilişkisel bir veritabanı tasarlamak, tablolar arası ilişkileri (Foreign Keys) kurmak ve veritabanı normalizasyon kurallarına uygun bir yapı inşa etmekti.
 
-🚀 Özellikler ve Teknik Gereksinimler
-Veritabanı Yönetim Sistemi: PostgreSQL
+### 🚀 Özellikler ve Teknik Gereksinimler
+**Veritabanı Yönetim Sistemi:** PostgreSQL
 
-Toplam Tablo Sayısı: 5 adet (`galaxy`, `star`, `planet`, `moon` ve `space_mission`)
+**Toplam Tablo Sayısı:** 5 adet (`galaxy`, `star`, `planet`, `moon` ve `space_mission`)
 
-Kısıtlamalar & Kurallar:
+**Kısıtlamalar & Kurallar:**
 
-Her tablo, `table_name_id` kuralına uygun, otomatik artan (`SERIAL`) bir Birincil Anahtara (Primary Key) sahiptir.
+* Her tablo, `table_name_id` kuralına uygun, otomatik artan (`SERIAL`) bir Birincil Anahtara (Primary Key) sahiptir.
 
-Hiyerarşik düzen Foreign Key'ler ile korunmuştur: `galaxy` ➔ `star` ➔ `planet` ➔ `moon`.
+* Hiyerarşik düzen Foreign Key'ler ile korunmuştur: `galaxy` ➔ `star` ➔ `planet` ➔ `moon`.
 
-`NOT NULL` ve `UNIQUE` kısıtlamaları ile veri tutarlılığı sağlanmıştır.
+* `NOT NULL` ve `UNIQUE` kısıtlamaları ile veri tutarlılığı sağlanmıştır.
 
-Kullanılan Veri Tipleri: `VARCHAR`, `INT`, `NUMERIC`, `TEXT` ve `BOOLEAN`.
+**Kullanılan Veri Tipleri:** `VARCHAR`, `INT`, `NUMERIC`, `TEXT` ve `BOOLEAN`.
 
-Veri Hacmi: 6 galaksi, 6 yıldız, 12 gezegen ve 20 ay olmak üzere toplamda 40'tan fazla satır veri işlenmiştir.
+**Veri Hacmi:** 6 galaksi, 6 yıldız, 12 gezegen ve 20 ay olmak üzere toplamda 40'tan fazla satır veri işlenmiştir.
 
-🛠️ Nasıl Çalıştırılır?
+### 🛠️ Nasıl Çalıştırılır?
 Bu veritabanını kendi yerel ortamınızda ayağa kaldırmak için PostgreSQL terminalinde şu komutu çalıştırın:
 
 ` CREATE DATABASE universe;`
